@@ -7,10 +7,13 @@
   <script type="text/jsx" src="./main.js"></script>
   <style type="text/css">
     body {
-      font-size: 12px;
-      font-family: "Source Sans Pro", sans-serif;
       padding: 50px;
       text-align: center;
+    }
+
+    body, input {
+      font-size: 12px;
+      font-family: "Source Sans Pro", sans-serif;
     }
 
     .btn {
@@ -32,6 +35,32 @@
       font-size: 60px;
       line-height: 0.85em;
       margin-bottom: 10px;
+    }
+
+    .input {
+      padding: 5px 10px;
+      border: 0;
+      width: 300px;
+      margin-top: 10px;
+      background-color: transparent;
+      border-bottom: 1px solid #ddd;
+      transition: border-color .3s;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .input:focus {
+      outline: none;
+      border-color: #999;
+    }
+
+    .echo {
+      margin: 50px auto;
+    }
+
+    .echo-text {
+      text-transform: uppercase;
+      margin-top: 5px;
     }
   </style>
 </head>
